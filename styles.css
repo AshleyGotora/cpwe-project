@@ -1,0 +1,535 @@
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  background-color: #e170f0;
+  color: #000;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+header .bussname {
+  font-size: 60px;
+  cursor: pointer;
+ }
+
+nav {
+  display: flex;
+  gap: 25px;
+  font-weight: 600;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+/*the underline that we see when we pass the cursor on the <a> tag*/
+nav a:hover, nav a.active {
+  border-bottom: 3px solid #fff;
+}
+
+
+
+
+/* mobile images banner */
+.buttons {
+  display: flex;
+  align-items: center;
+  height: 900px;
+  color: #000;
+  padding: 0 50px;
+  gap: 40px;
+  animation: backgroundchanger 15s infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes backgroundchanger {
+  0% { background-image: url('../images/iphones.jpg'); }
+  40%  { background-image: url('./images/galaxys24.jpg'); }
+  60% { background-image: url('./images/asusroglapgamer.jpg');}
+  80% { background-image: url('./images/iphone14pm.jpg');}
+  100% { background-image: url('./images/ASUS1.png')}
+}
+
+.hero .hero-text p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+/*the effect of the square button*/
+.buttons .shop-buttons button {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons .shop-buttons {
+  max-width: 600px;
+  background: rgba(255,255,255,0.8);
+  padding: 30px;
+  font-weight: 600;
+}
+
+/*Adding the border to the buttons*/
+.buttons .button {
+  display: inline-block;
+  background: transparent;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #000;  /* This is the black outline */
+  transition: background-color 0.3s ease;
+}
+
+.buttons .button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* Products section */
+.products {
+  padding: 40px 50px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.product-group {
+  flex: 1 1 250px;
+  max-width: 250px;
+}
+
+.product-group p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.sub p {
+  font-weight: 400;
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+
+.slides img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.slides img:hover {
+  border-color: #000;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  color: #666;
+  padding: 20px 50px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@font-face {
+  font-family: 'Digital7';
+  src: url('fonts/digital-7.woff2') format('woff2'),
+       url('fonts/digital-7.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bussname {
+  font-family: 'Digital7', monospace;
+  font-size: 48px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  width: 0;
+  max-width: 12ch; /* Número de caracteres */
+  animation: typing 2s steps(12), blink 0.5s step-end infinite;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 18ch }
+}
+
+/* Piscar do cursor */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.fireimg .src {
+  font-size: small;
+}
+.emoji {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  animation: pulseanimation 1s infinite;
+}
+
+@keyframes pulseanimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1);}
+}
+
+.mybuildpc {
+  text-align: center;
+  margin: 10%;
+  background-color: transparent;
+}
+
+.mybuildpc .pcbutton {
+  font-size: 50px;
+}
+
+.button2 {
+  text-align: center;
+  margin: -10%;
+}
+
+.button2 button {
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  margin-right: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/*effect of the button when I pass the cursor*/
+.button2 button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.pcmargin .mybuildpc {
+  max-width: auto;
+  background: rgba(255,255,255,0.8);
+  padding: 30px;
+  font-weight: 600;
+}
+
+/*CELLPHONE.html PART*/
+.quetion {
+  text-align: center;
+  padding: 10%;
+  color: #000;
+}
+
+.mobile-button {
+  text-align: center;
+}
+
+.mobile-button a {
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  margin: 0px 50px;
+  margin-right: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, background-color 0.3s ease; 
+}
+
+.mobile-button a:hover {
+  background-color: #000;
+  color: #fff;
+  justify-items: center;
+  padding: 10px 20px;
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.mobile-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  color: #fff;
+  padding: 0 50px;
+  gap: 40px;
+  animation: backgroundchanger2 15s infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.6s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+@keyframes backgroundchanger2 {
+  0%  { background-image: url('./images/galaxys24.jpg'); }
+  100% { background-image: url('./images/iphone14pm.jpg'); }
+}
+
+.mobile-button .ibutton {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mobile-button .ibutton:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.mobile-button .sbutton {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mobile-button .sbutton:hover {
+  text-decoration: underline;
+}
+
+.mobile-button .ibutton:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  color: #fff;
+  padding: 0 50px;
+  gap: 40px;
+  animation: backgroundchanger2 15s infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s ease;
+}
+
+@keyframes backgroundchanger2 {
+  0%  { background-image: url('./images/iphone14pm.jpg'); }
+  100% { background-image: url('./images/iphone14pm.jpg'); }
+}
+
+.mobile-button .sbutton:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  color: #fff;
+  padding: 0 50px;
+  gap: 40px;
+  animation: backgroundchanger3 15s infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s ease;
+}
+
+@keyframes backgroundchanger3 {
+  0%  { background-image: url('./images/galaxys24.jpg'); }
+  100% { background-image: url('./images/galaxys24.jpg'); }
+}
+
+.computers-button a {
+  justify-content: center;
+  
+}
+
+.asusbutton {
+  background-color: transparent;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+.lenovobutton {
+  background-color: transparent;
+  padding: 20px 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.ss {
+  text-align: center;
+  font-size: 50px;
+  background-color: purple;
+}
+
+#produtos {
+  display: flex;
+}
+
+.produto img {
+  width: 200px;   /* largura da imagem */
+  height: 200px;   /* altura ajusta automaticamente */
+  text-align: center;
+  margin-top: 100px;
+
+}
+
+.buy-button {
+  display: inline-block;      /* transforma o link em bloco tipo botão */
+  padding: 10px 20px;         /* espaço interno */
+  background-color: #fff;
+  text-align: center;
+  color: #000;               
+  text-decoration: none;    
+  font-weight: bold;          /* deixa o texto em negrito */
+  border-radius: 8px;         
+  transition: 0.3s;           /* animação suave */
+}
+
+.buy-button:hover {
+  background-color: transparent;
+  
+}
+
+.sales img {
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+.buy-button {
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.zephyrusg14 .specification-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+}
+
+.asusg14 img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.asusg14 img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3 ease;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-info h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.product-info ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.product-info li {
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #444;
+}
+
+
+/*Barra de pesquisas*/
+#barra-pesquisa-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#barra-de-pesquisa {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#botão-pesquisar {
+  padding: 10px 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/*Barra de email*/
+#barra-de-email-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+#barra-de-email {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#botao-email {
+  padding: 10px 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+header .login-button {
+  text-decoration: none;
+  color: #fff;
+}

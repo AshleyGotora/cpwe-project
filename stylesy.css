@@ -1,0 +1,82 @@
+body{
+    font-family: 'Elms Sans';
+    background-image: url(./images/bg-mobile@3x.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+#moz_symbols img{
+    height: 50px;
+    width: 70px;
+}
+
+#moz_symbols p strong{
+  font-family: "Lobster", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: normal;
+  margin: 20px;
+}
+
+.bi {
+    margin-left: 95px;
+}
+
+#id_card{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#my_photo{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    bottom: 50px;
+    animation: upndown 3s ease-in-out infinite; 
+}
+
+@keyframes upndown{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.my_name{
+    font-size: 2rem;
+    word-spacing: 0.9375rem;
+}
+
+#birth_description{
+    display: flex;
+    justify-content: space-between;
+}
+
+#left_side{
+    align-items: center;
+    justify-content: center;
+}
+
+#left_side:hover {
+    align-items: center;
+    justify-content: center;
+    animation: uptodown 2s ease-in-out infinite;
+}
